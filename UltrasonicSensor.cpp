@@ -14,7 +14,7 @@ float UltrasonicSensor::measureDistance() {
   delayMicroseconds(10);
   digitalWrite(trigPin, LOW);
 
-  unsigned long duration = pulseIn(echoPin, HIGH);
+  unsigned long duration = pulseIn(echoPin, HIGH, 30000);
   distance = duration * 0.0343 / 2;
   return distance;
 }
