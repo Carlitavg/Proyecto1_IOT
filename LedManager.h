@@ -5,7 +5,7 @@
 
 class LedManager {
 private:
-  Led* leds[3];
+  Led leds[3];
 public:
   LedManager(byte port1, byte port2, byte port3);
   void turnOnLed(byte pin);
